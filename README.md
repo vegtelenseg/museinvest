@@ -13,8 +13,8 @@ Free online music investment platform built to serve as a common ground of reach
 
 ```bash
 git clone https://github.com/Siyanda-Mzam/museinvest.git
-cd musinvest
-npm i
+cd museinvest
+npm i (if it bugs out, try again with sudo)
 typings install
 npm start
 ```

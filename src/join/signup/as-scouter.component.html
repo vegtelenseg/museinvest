@@ -36,7 +36,7 @@
                         <label class="control-label" for="city"> <abbr title="required">*</abbr> City</label>
                         <div class="controls">
                             <select  #city (change)="chooseCity(city.value)" class="input-xlarge" name="roleSelect">
-                                <option *ngFor="#province of provinces" [value]="province">{{province}}</option>
+                                <option  *ngFor="let province of provinces" [value]="province">{{province}}</option>
                             </select>
                         </div>
                     </div>

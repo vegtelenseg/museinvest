@@ -36,7 +36,7 @@
                         <div class="control-group">
                             <div class="controls">
                                 <select #t (change)="asRole(t.value)" class="input-select" name="roleSelect">
-                                    <option *ngFor="#role of roles" [value]="role">{{role}}</option>
+                                    <option *ngFor="let role of roles" [value]="role">{{role}}</option>
                                 </select>
                                 <p style="color:#e6e8ed !important"> {{confMsg}} </p>
                             </div>

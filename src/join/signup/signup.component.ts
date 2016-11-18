@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SignupService, AsScouterService, AsArtistService, LocationService } from './signup.service';
 
 @Component({
-
     selector: 'signup',
     templateUrl: './signup.component.html',
     styleUrls: ['../sign.component.css', '../../headers.component.css'],
@@ -38,8 +37,8 @@ export class SignupComponent {
 }
 @Component({
     selector: 'as-artist',
-    template: require('./as-artist.component.html'),
-    styles: [require('../sign.component.css'), require('../../headers.component.css')],
+    templateUrl: './as-artist.component.html',
+    styleUrls: ['../sign.component.css', '../../headers.component.css'],
     providers: [AsArtistService, LocationService]
 })
 export class SignAsArtistComponent {
@@ -49,8 +48,8 @@ export class SignAsArtistComponent {
 }
 @Component({
     selector: 'as-scouter',
-    template: require('./as-scouter.component.html'),
-    styles: [require('../sign.component.css'), require('../../headers.component.css')],
+    templateUrl: './as-scouter.component.html',
+    styleUrls: ['../sign.component.css', '../../headers.component.css'],
     providers: [AsScouterService, LocationService]
 })
 export class SignAsScouterComponent {
