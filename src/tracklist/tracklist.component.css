@@ -1,0 +1,138 @@
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 300px;
+    height: 290px;
+}
+
+div.desc {
+    padding: 15px;
+    background: #525459;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    margin-left: 45px !important;
+    float: left;
+    width: 100%;
+    height: 480px;
+}
+
+/* Nokia Lumia 520, iPhone 4 and 5 */
+@media only screen and (min-width: 320px) {
+    .responsive {
+        padding: 0 6px;
+        margin-left: 27px !important;
+        float: left;
+        width: 100%;
+        height: 480px;
+    }
+    div.img img {
+        width: 270px;
+        height: 260px;
+    }
+}
+
+/* BlackBerry Z30, Galaxy Note 2 and 3, Nexus 5, Nokia N9, Galaxy S5 */
+@media only screen and (max-width: 360px){
+}
+
+/* iPhone 6*/
+@media only screen and (max-width: 375px) {
+}
+
+/* LG Optimus L70, Nexus 4 */
+@media only screen and (max-width: 384px) {
+}
+
+/* Nexus 5X */ 
+@media only screen and (max-width: 411px) {
+}
+
+/* Nexus 6 */
+@media only screen and (max-width: 412px) {
+}
+
+/* iPhone 6 Plus */
+@media only screen and (max-width: 414px) {
+}
+
+/* Nexus 6P */
+@media only screen and (max-width: 435px) {
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* Blackberry Playbook, Nexus 7 */
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+/* iPad, iPad Mini */
+@media only screen and (max-width: 768px) {
+}
+
+/* Nexus 10 */
+@media only screen and (max-width: 800px) {
+}
+
+
+/* Laptop with MDPI screen, Laptop with Touch */
+@media only screen and (max-width: 1280px) {
+    .responsive {
+        padding: 0 6px;
+        margin-left: 25px !important;
+        float: left;
+        width: 100%;
+        height: 480px;
+    }
+}
+
+/* Laptop with HiDPI screen*/
+@media only screen and (min-width: 1440px) {
+        .responsive {
+        padding: 0 6px;
+        margin-left: 102.5px !important;
+        float: left;
+        width: 100%;
+        height: 480px;
+    }
+}
+
+/* Kindle Fire HDX */
+@media only screen and (min-width: 1600px) {
+        .responsive {
+        padding: 0 6px;
+        margin-left: 45px !important;
+        float: left;
+        width: 100%;
+        height: 480px;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
